@@ -1,4 +1,7 @@
 # Picroft älykaiutin
 
-Projekti on tehty Haaga-Helian monialaprojekti kurssia varten. 
-Projektin tavoitteena on luoda toimiva älykaiutin käyttäen Raspberry Pi 4:sta ja Mycroft ääniavustajaa. 
+Projekti on tehty Haaga-Helian monialaprojekti kurssia varten. Tavoitteena on nopeuttaa tiedon hankkimista ja tehdä siitä vaivattomampaa. Projektin tuloksena syntyy toimiva älykaiutin hyödyntäen Raspberry Pi 4:sta ja Mycroft ääniavustajaa.
+
+# 1. Picroftin asennus
+
+# 2. Etähallinnan käyttöönotto
