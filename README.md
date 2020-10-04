@@ -4,4 +4,7 @@ Projekti on tehty Haaga-Helian monialaprojekti kurssia varten. Tavoitteena on no
 
 ## 1. Picroftin asennus
 
+
 ## 2. Etähallinnan käyttöönotto
+
+
