@@ -8,5 +8,5 @@ Projekti on tehty Haaga-Helian monialaprojekti kurssia varten. Tavoitteena on no
 ## 2. Etähallinnan käyttöönotto
 
 ![Portti1](images/1_LI.jpg)
-![Portti2](images/2.png)
-![Portti3](images/3.png)
+![Portti2](images/2.PNG)
+![Portti3](images/3.PNG)
