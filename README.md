@@ -56,6 +56,8 @@ Laite pitää rekisteröideä osoitteessa: [home.mycroft.ai](https://sso.mycroft
 
 Kirjauduttiin sisään omalla käyttäjällä ja tämän jälkeen syötettiin tarpeelliset tiedot, kuten mm. sijainti, käytettävät yksiköt ja ääni.
 
+Mycroft antoi myös yksilöllisen laitekoodin, mikä piti syöttää sille annettuun kenttään rekisteröinnissä.
+
 ![Portaali](images/Portaali1.png)
 
 ### 3.3 Wi-fi yhteyden muodostaminen
