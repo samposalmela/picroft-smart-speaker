@@ -12,6 +12,8 @@ Raspberry Pin muistikortti laitettiin USB-adapteriin, jonka avulla muistikortti 
 
 Laitteeseen liitettiin 3.5mm kaapelilla toimiva kaiutin ja Sandstrøm Full HD web-kamera.
 
+[!Kaiutin](images/Kaiutin.jpg)[!Mikki](images/Mikki.jpg)
+
 Tämän jälkeen Raspberry Pi liitettiin kiinni ethernet yhteydellä ja kytkettiin päälle. 
 
 ## 2. Etähallinnan käyttöönotto
@@ -30,11 +32,15 @@ Avattu portti ja IP-osoite SSH-yhteydelle (22). Lisäksi etätyöpöytä yhteyde
 
 Picroftissa on oletuksena SSH käyttöönotettuna, joten sitä ei tarvitse erikseen laitteesta ottaa käyttöönotettuna. Voidaan ottaa suoraan yhteys Picroftiin käyttäen PuTTYa ja Raspberry Pin sisäistä IP-osoitetta.
 
-Kirjauduttiin sisään `käyttäjänimi: pi` ja `salasana: mycroft`.
+[!Putty](images/Putty!.PNG)
+
+Kirjauduttiin sisään `käyttäjänimi: pi` ja `salasana: mycroft`, jonka jälkeen avautuu seuraavaanlainen näkymä. 
+
+[!aloitus](images/Aloitus.png)
 
 ## 3. Mycroftin asentaminen
 
-### 3.1
+### 3.1 Mycroftin alkuasetukset
 
 Valittiin `Y` eli guided setup.
 
@@ -44,11 +50,15 @@ Input valitttin `4` eli joku muu USB-mikrofoni, koska Sandstrøm Full HD web-kam
 
 Tämän jälkeen valitsimme käytettävän version valitsimme `1` eli Recommended - käytetään stabiilista versiota.
 
-### 3.2
+### 3.2 Laitteen rekisteröinti
 
-home.mycroft.ai
+Laite pitää rekisteröideä osoitteessa: [home.mycroft.ai](https://sso.mycroft.ai/login?redirect=https:%2F%2Fhome.mycroft.ai%2F).
 
-### 3.3. Wi-fi yhteyden muodostaminen
+Kirjauduttiin sisään omalla käyttäjällä ja tämän jälkeen syötettiin tarpeelliset tiedot, kuten mm. sijainti, käytettävät yksiköt ja ääni.
+
+[!Portaali](images/Portaali1.png)
+
+### 3.3 Wi-fi yhteyden muodostaminen
 
 Muokataan tiedostoa 'wpa_supplicant.conf' komennolla `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`.
 
@@ -62,3 +72,8 @@ country=FI
 ```
 Syötetään `Ctrl + X` to exit and `Y` then `Enter` to save your changes.
 Lopuksi kirjoitetaan  `sudo reboot now`.
+
+### 3.4 Testaaminen
+
+
+
