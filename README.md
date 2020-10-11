@@ -32,11 +32,11 @@ Avattu portti ja IP-osoite SSH-yhteydelle (22). Lisäksi etätyöpöytä yhteyde
 
 Picroftissa on oletuksena SSH käyttöönotettuna, joten sitä ei tarvitse erikseen laitteesta ottaa käyttöönotettuna. Voidaan ottaa suoraan yhteys Picroftiin käyttäen PuTTYa ja Raspberry Pin sisäistä IP-osoitetta.
 
-![Putty](images/Putty!.PNG)
+![Putty](images/Putty1.PNG)
 
 Kirjauduttiin sisään `käyttäjänimi: pi` ja `salasana: mycroft`, jonka jälkeen avautuu seuraavaanlainen näkymä. 
 
-![aloitus](images/Aloitus.png)
+![aloitus](images/Aloitus1.png)
 
 ## 3. Mycroftin asentaminen
 
