@@ -8,6 +8,8 @@ Ensin ladattiin [Picroft disk image](https://drive.google.com/uc?id=1nyd5l5vgRy-
 
 Sen jälkeen asennettiin [balenaEtcher](https://www.balena.io/etcher/), jonka avulla saatiin Picroft asennettua muistikortille. 
 
+![Etcher](images/etcher.png)
+
 ## 2. Etähallinnan käyttöönotto
 
 ### 2.1 Porttien avaus
