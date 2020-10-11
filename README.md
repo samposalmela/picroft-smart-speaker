@@ -10,11 +10,13 @@ Raspberry Pin muistikortti laitettiin USB-adapteriin, jonka avulla muistikortti 
 
 ![Etcher](images/etcher.png)
 
+Tämän jälkeen Raspberry Pi liitettiin kiinni ethernet yhteydellä ja kytkettiin päälle. 
+
 ## 2. Etähallinnan käyttöönotto
 
 ### 2.1 Porttien avaus
 
-Määritetetään paikallinen IP-osoite, ulospäin menevä portti, sisäinen portti ja protokolla.
+Määritetetään paikallinen IP-osoite, ulospäin menevä portti, sisäinen portti ja protokolla reitittimen asetuksista.
 
 ![Portti2](images/2.PNG)
 
