@@ -12,7 +12,7 @@ Raspberry Pin muistikortti laitettiin USB-adapteriin, jonka avulla muistikortti 
 
 Laitteeseen liitettiin 3.5mm kaapelilla toimiva kaiutin ja Sandstrøm Full HD web-kamera.
 
-[!Kaiutin](images/Kaiutin.jpg)[!Mikki](images/Mikki.jpg)
+![Kaiutin](images/Kaiutin.jpg)![Mikki](images/Mikki.jpg)
 
 Tämän jälkeen Raspberry Pi liitettiin kiinni ethernet yhteydellä ja kytkettiin päälle. 
 
@@ -32,11 +32,11 @@ Avattu portti ja IP-osoite SSH-yhteydelle (22). Lisäksi etätyöpöytä yhteyde
 
 Picroftissa on oletuksena SSH käyttöönotettuna, joten sitä ei tarvitse erikseen laitteesta ottaa käyttöönotettuna. Voidaan ottaa suoraan yhteys Picroftiin käyttäen PuTTYa ja Raspberry Pin sisäistä IP-osoitetta.
 
-[!Putty](images/Putty!.PNG)
+![Putty](images/Putty!.PNG)
 
 Kirjauduttiin sisään `käyttäjänimi: pi` ja `salasana: mycroft`, jonka jälkeen avautuu seuraavaanlainen näkymä. 
 
-[!aloitus](images/Aloitus.png)
+![aloitus](images/Aloitus.png)
 
 ## 3. Mycroftin asentaminen
 
@@ -56,7 +56,7 @@ Laite pitää rekisteröideä osoitteessa: [home.mycroft.ai](https://sso.mycroft
 
 Kirjauduttiin sisään omalla käyttäjällä ja tämän jälkeen syötettiin tarpeelliset tiedot, kuten mm. sijainti, käytettävät yksiköt ja ääni.
 
-[!Portaali](images/Portaali1.png)
+![Portaali](images/Portaali1.png)
 
 ### 3.3 Wi-fi yhteyden muodostaminen
 
