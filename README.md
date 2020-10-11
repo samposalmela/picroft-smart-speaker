@@ -20,7 +20,7 @@ Määritetetään paikallinen IP-osoite, ulospäin menevä portti, sisäinen por
 
 ![Portti2](images/2.PNG)
 
-Avattu portti ja IP-osoite SSH-yhteydelle (22),etätyöpöytä yhteydelle (3389) ja VNC viewerille (5800-5900). 
+Avattu portti ja IP-osoite SSH-yhteydelle (22). Lisäksi etätyöpöytä yhteydelle (3389) ja VNC viewerille (5800-5900), jos joskus tulevaisuudessa näille tulee tarvetta. 
 
 ![Portti3](images/3.PNG)
 
