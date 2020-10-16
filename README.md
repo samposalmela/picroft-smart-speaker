@@ -12,7 +12,7 @@ Raspberry Pin muistikortti laitettiin USB-adapteriin, jonka avulla muistikortti 
 
 Laitteeseen liitettiin 3.5mm kaapelilla toimiva kaiutin ja Sandstrøm Full HD web-kamera.
 
-<img src="images/Mikki.jpg" {float: right;}><img src="images/Kaiutin.jpg" {float: right;}>
+<img src="images/Mikki.jpg" float:"right"><img src="images/Kaiutin.jpg" float:"right">
 
 Tämän jälkeen Raspberry Pi liitettiin kiinni ethernet yhteydellä ja kytkettiin päälle. 
 
