@@ -77,5 +77,23 @@ Lopuksi kirjoitetaan  `sudo reboot now`.
 
 ### 3.4 Testaaminen
 
+`Hey Mycorft, news`
+
+Picroft alkoi toistaa Ylen tämän päivän uutislähetystä. 
+
+`Hey Mycroft, what is the weather?`
+
+Picroft kertoi tämän päivän sään. 
+
+Mikrofonin sijainti vaikutti tosi paljon tunnistiko Mycroft puhetta tai herätys sanaa (wakeword).
+
+## 4. LIFX taidon asentaminen
+
+`msm install lifx-mycorft`
+
+
+
+
+
 
 
