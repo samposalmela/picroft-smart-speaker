@@ -89,7 +89,9 @@ Mikrofonin sijainti vaikutti tosi paljon tunnistiko Mycroft puhetta tai herätys
 
 ## 4. LIFX taidon asentaminen
 
-`msm install lifx-mycorft`
+Asennetaan sovellus komennolla `msm install lifx-mycorft`.
+
+Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 
 
