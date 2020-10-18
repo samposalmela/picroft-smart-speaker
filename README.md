@@ -77,6 +77,8 @@ Lopuksi kirjoitetaan  `sudo reboot now`.
 
 ### 3.4 Testaaminen
 
+Picroftissa on valmiina tiettyjä taitoja vaklmiiksi asennettuina. Ne löytyvät osoitteesta: https://mycroft-ai.gitbook.io/docs/using-mycroft-ai/basic-commands
+
 `Hey Mycorft, news`
 
 Picroft alkoi toistaa Ylen tämän päivän uutislähetystä. 
@@ -92,13 +94,15 @@ Mikrofonin sijainti vaikutti tosi paljon tunnistiko Mycroft puhetta tai herätys
 Projektia varten on hankittu LIFX Mini Colour -älylamppu. 
 <img src="images/LIFX2.jpg" width="400">
 
+Lampun hallintaan käytetään [Sawyer McLanen luomaa LIFX taitoa](https://market.mycroft.ai/skills/ff3292f1-132e-46fa-9818-fe13a45d6f92). 
+
 Asennetaan sovellus komennolla `msm install lifx-mycorft`.
 
 Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 [Demo lampun toiminnasta asennetulla taidolla.](https://drive.google.com/file/d/1OOqKWghQ8k2rlqJo03hPLnIm5dxCgOaK/view?usp=sharing)
 
-<img src="images/LIFX.jpg">
+<img src="images/LIFX.png">
 
 
 
