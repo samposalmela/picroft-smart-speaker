@@ -89,9 +89,14 @@ Mikrofonin sijainti vaikutti tosi paljon tunnistiko Mycroft puhetta tai herätys
 
 ## 4. LIFX taidon asentaminen
 
+Projektia varten on hankittu LIFX Mini Colour -älylamppu. 
+
 Asennetaan sovellus komennolla `msm install lifx-mycorft`.
 
 Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
+
+[Demo lampun toiminnasta asennetulla taidolla.](https://drive.google.com/file/d/1OOqKWghQ8k2rlqJo03hPLnIm5dxCgOaK/view?usp=sharing]
+
 
 
 
