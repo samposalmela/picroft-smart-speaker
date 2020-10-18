@@ -92,7 +92,7 @@ Mikrofonin sijainti vaikutti tosi paljon tunnistiko Mycroft puhetta tai herätys
 ## 4. LIFX taidon asentaminen
 
 Projektia varten on hankittu LIFX Mini Colour -älylamppu. 
-<img src="images/LIFX2.jpg" height="400" float="left">
+<img src="images/LIFX2.jpg">
 
 Lampun hallintaan käytetään [Sawyer McLanen luomaa LIFX taitoa](https://market.mycroft.ai/skills/ff3292f1-132e-46fa-9818-fe13a45d6f92). 
 
