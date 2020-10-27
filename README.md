@@ -108,6 +108,3 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 
 
-
-
-
