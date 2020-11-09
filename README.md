@@ -106,7 +106,54 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 ## 5. Oman taidon luonti
 
-Loimme mycroftin skill kitin avulla 
+Loimme mycroftin skill kitin avulla.
+
+`msk create`
+
+Annetaan lyhyt uniikki taidon nimi.
+
+`HSL-Tracking`
+
+Annetaan esimerkki ilmaisuja aktivointia varten.
+
+esim. `When does next bus arrive?`
+
+Annetaan mycroft vastaus.
+
+esim. `Never`
+
+Annetaan taidon kuvaus ja pidempi kuvaus.
+
+Annetaan laatijan GitHub nimi.
+
+Annetaan logo osoitteesta: https://fontawesome.com/cheatsheet
+
+Annetaan väri käyttämällä Hex-värikoodeja.
+
+Valitaan gategoriat ja tagit Mycroft marketplacea varten.
+
+Valitaan lisenssi:
+- Apache v2.0
+- GPL v3.0
+- MIT
+tai skip.
+
+Sen jälkeen Mycroft kysyy riippuuko taito toisista taidoista, python paketeista jne.
+
+Mycroft kysyy luodaanko taidolle Github repository.
+
+Luodaan repository antamalla token:
+1. Mennään osoitteeseen https://github.com/settings/tokens/new
+2. Anna nimi
+3. Valitaan rajaus [x] repo
+4. Paina "Generate token"
+5. Kopioidaan ja syötetään token Mycroftiin.
+
+Annetaan msk:lle lupa varastoida token.
+
+Taidon luonti on valmis.
+
+<img src="images/skill_luonti6.png">
 
 
 
