@@ -104,6 +104,9 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 <img src="images/LIFX.png">
 
+### 5. Oman taidon luonti
+
+Loimme mycroftin skill kitin avulla 
 
 
 
