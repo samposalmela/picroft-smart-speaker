@@ -153,7 +153,7 @@ Annetaan msk:lle lupa varastoida token.
 
 Taidon luonti on valmis.
 
-<img src="images/skill_luonti6.png">
+<img src="images/skill_luonti6.jpg">
 
 
 
