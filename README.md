@@ -173,6 +173,7 @@ Jokaisen päivityksen jälkeen raspberry piti rebootata.
 
 
 Välillä tuli Erroreitakin.
+Error johtui kun kokeilimme tehdä taitoon jatko kysymyksiä. Esim. Kun kysytään seuraavaa bussia ja kysyisi heti perään seuraavaa.
 
 <img src="images/Error1.PNG">
 
