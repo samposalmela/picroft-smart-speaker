@@ -155,6 +155,16 @@ Taidon luonti on valmis.
 
 <img src="images/Skill_luonti6.jpg">
 
+Taidon päivittäminen onnistui kommennolla.
+
+`msm update hsl`
+
+Jokaisen päivityksen jälkeen raspberry piti rebootata.
+
+`sudo reboot`
+
+
+
 
 
 
