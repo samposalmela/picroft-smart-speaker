@@ -172,5 +172,9 @@ Jokaisen päivityksen jälkeen raspberry piti rebootata.
 
 
 
+Välillä tuli Erroreitakin.
+
+<img src="images/Error1.PNG">
+
 
 
