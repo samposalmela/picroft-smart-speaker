@@ -106,7 +106,7 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 ## 5. Oman taidon luonti
 
-Loimme mycroftin skill kitin avulla.
+Loimme mycroftin skill kitin avulla template taidon (pohja).
 
 `msk create`
 
@@ -154,6 +154,10 @@ Annetaan msk:lle lupa varastoida token.
 Taidon luonti on valmis.
 
 <img src="images/Skill_luonti6.jpg">
+
+Taito koodipätkän jälkeen
+
+<img src="images/Skill_toimii.PNG">
 
 Taidon päivittäminen onnistui kommennolla.
 
