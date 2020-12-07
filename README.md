@@ -159,6 +159,8 @@ Taidon päivittäminen onnistui kommennolla.
 
 `msm update hsl`
 
+<img src="images/Paivitys.png">
+
 Jokaisen päivityksen jälkeen raspberry piti rebootata.
 
 `sudo reboot`
