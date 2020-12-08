@@ -178,4 +178,9 @@ Error johtui kun kokeilimme tehd채 taitoon jatko kysymyksi채. Esim. Kun kysyt채�
 <img src="images/Error1.PNG">
 
 
+Seuraava errori johtui kun kokeilimme hieman siivota koodip채tk채채.
+
+<img src="images/Error1_Eipaivityaika.PNG">
+
+
 
