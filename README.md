@@ -162,7 +162,7 @@ Taidon luonti on valmis.
 
 <img src="images/Skill_luonti6.jpg">
 
-### 5.2 Taidon luominen
+### 5.2 Python koodin kirjoittaminen
 
 Aloitimme taidon luomisen tekemällä pelkän Pythonissa toimivan toteutuksen ilman Mycroft ominaisuuksia.
 
@@ -222,9 +222,93 @@ second = times[1]
 third = times [2]
 ```
 
+Muutetaan ajat vastaamaan kellon aikaa ja haettiin myös bussien suuntaotsakkeet.
+```
+conversion = datetime.timedelta(seconds=next['realtimeArrival'])
+arrival_time = str(conversion)
+
+conversion = datetime.timedelta(seconds=second['realtimeArrival'])
+arrival_time2 = str(conversion)
+
+conversion = datetime.timedelta(seconds=third['realtimeArrival'])
+arrival_time3 = str(conversion)
+
+headsign = next['headsign']
+```
+
+Lopuksi saatiin loppu tulokseksi kolmen seurvaan bussin reaaliaikaiset saapumisajankohdat, sekä suuntaotsakkeet.
+```
+print(arrival_time,next['headsign'])
+print(arrival_time2,after['headsign'])
+print(arrival_time3,last['headsign'])
+
+```
+Output:
+```
+16:32:08 Tikkurila
+16:38:33 Aviapolis via Jumbo
+16:45:53 Aviapolis via Jumbo
+```
+
+### 5.3 Mycroft ominaisuuksien lisääminen Python koodiin
+
+Hetaan Mycroftin käyttämät moduulit.
+```
+from adapt.intent import IntentBuilder
+from mycroft import MycroftSkill, intent_handler
+```
+
+Samalla tavalla noudetaan API ja kysytään sen sisältöä GraphQL:n avulla. Luodaan luokka `HslSkill(MycroftSkill)`, jonka sisään tulee kaikki taidon tarvitsemat ominaisuudet.
+```
+class HslSkill(MycroftSkill):
+    def __init__(self):
+        super(HslSkill, self).__init__(name='HslSkill')
+
+    def initialize(self):
+        self.load_data_files(dirname(__file__))
+
+    @intent_handler(IntentBuilder('NextBusIntent').require('NextBusKeyword'))
+    def next_bus_intent(self, message):
+        result = run_query(query)
+        json_output = result
+        output = json_output['data']
+
+        stop = output['stop']
+        times = stop['stoptimesWithoutPatterns']
+
+        next = times[0]
+      
+        conversion = datetime.timedelta(seconds=next['realtimeArrival'])
+        arrival_time = str(conversion)
+        headsign = next['headsign']
+
+        self.speak_dialog("Next bus leaves at {} destination {}".format(arrival_time, headsign))
+```
+
+Tehdään tarvittavat "Keyword" tiedostot, jotka sisältävät Mycroftin tarvitsemat avainsanat taidon aktivointia varten.
+
+NextBysKeyword.voc:
+```
+next bus
+what is the next bus
+when does the next bus arrive
+```
+
+Luodaan "intent.json" tiedostot, jotta oikea avainsana yhdistyy oikean tarkoituksen kanssa.
+```
+{
+  "utterance": "Next bus",
+  "intent_type": "NexBusIntent",
+  "intent": {
+    "NextBusKeyword": "next bus"
+  }
+}
+```
 Taito koodipätkän jälkeen
 
 <img src="images/Skill_toimii.PNG">
+
+### 5.4 Taidon päivittäminen
 
 Taidon päivittäminen onnistui kommennolla.
 
@@ -236,12 +320,15 @@ Jokaisen päivityksen jälkeen raspberry piti rebootata.
 
 `sudo reboot`
 
-Välillä tuli myös Error-koodia.
-Error johtui kun kokeilimme tehdä taitoon jatko kysymyksiä. Esim. Kun kysytään seuraavaa bussia ja kysyisi heti perään seuraavaa.
+### 5.5 Ongelmat taidon luonnissa
+
+Välillä tuli myös virheitä.
+
+Tämä virhe tapahtui, kun kokeilimme tehdä taitoon jatkokysymyksiä. Esim. Kun kysytään seuraavaa bussia ja kysyisi heti perään seuraavaa.
 
 <img src="images/Error1.PNG">
 
-Seuraava error-koodi johtui kun kokeilimme hieman siivota koodipätkää.
+Seuraava virhekoodi tapahtui, kun kokeilimme hieman siivota koodipätkää, siirtämällä kyselyn suorittamisen ja sen kaivamisen "intent handlerien" yläpuolelle, jotta tämä olisi tarvinnut suorittaa vain kerran.
 
 <img src="images/Error1_Eipaivityaika.PNG">
 
