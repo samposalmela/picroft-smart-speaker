@@ -106,9 +106,11 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 <img src="images/LIFX.png">
 
-## 5. Oman taidon luonti
+## 5. Oman taidon luonti (HSL Tracking Skill)
 
-HSL Tracking skill repo:
+### 5.1 Pohjan luonti
+
+HSL tracking skill repo:
 https://github.com/samposalmela/hsl-tracking-skill
 
 Loimme mycroftin skill kitin avulla template taidon (pohja).
@@ -159,6 +161,66 @@ Annetaan msk:lle lupa varastoida token.
 Taidon luonti on valmis.
 
 <img src="images/Skill_luonti6.jpg">
+
+### 5.2 Taidon luominen
+
+Aloitimme taidon luomisen tekemällä pelkän Pythonissa toimivan toteutuksen ilman Mycroft ominaisuuksia.
+
+Haetaan ensin tarvittavat moduulit API:n käsittelyä ja ajan käsittelyä varten.
+```
+import requests
+import datetime
+```
+
+Sen jälkeen noudetaan API.
+```
+def run_query(query): # A simple function to use requests.post to make the API call. Note the json= section.
+    request = requests.post('https://api.digitransit.fi/routing/v1/routers/hsl/index/graphql', json={'query': query})
+    if request.status_code == 200:
+        return request.json()
+    else:
+        raise Exception("Query failed to run by returning code of {}. {}".format(request.status_code, query))
+```
+
+Käytetään GraphQL:lää tiedon kuvaamiseen ja kysymiseen.
+```
+query = """
+{
+  stop(id: "HSL:4610237") {
+    name
+      stoptimesWithoutPatterns {
+      scheduledArrival
+      realtimeArrival
+      arrivalDelay
+      scheduledDeparture
+      realtimeDeparture
+      departureDelay
+      realtime
+      realtimeState
+      serviceDay
+      headsign
+    }
+  }  
+}
+"""
+```
+
+Suoritetaan kysely ja haetaan tarvittava tieto.
+```
+#Suoritetaan kysely
+result = run_query(query) 
+
+#Haetaan tarvittavat tiedot kaivamalla
+json_output = result 
+output = json_output['data']
+stop = output['stop']
+times = stop['stoptimesWithoutPatterns']
+
+#3 seuraavaa bussia
+next = times[0]
+second = times[1]
+third = times [2]
+```
 
 Taito koodipätkän jälkeen
 
