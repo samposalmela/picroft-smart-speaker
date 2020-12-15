@@ -108,6 +108,9 @@ Anentamisen jälkeen uudelleen käynnistetään komennolla `sudo reboot`.
 
 ## 5. Oman taidon luonti
 
+HSL Tracking skill repo:
+https://github.com/samposalmela/hsl-tracking-skill
+
 Loimme mycroftin skill kitin avulla template taidon (pohja).
 
 `msk create`
@@ -198,5 +201,7 @@ Halusimme myös mahdollisuuden kysyä jatkokysymyksen luomaltamme taidolta, mutt
 ### Lähteet
 
 https://mycroft-ai.gitbook.io/docs/
+
 https://digitransit.fi/en/developers/apis/1-routing-api/stops/
+
 https://graphql.org/code/#python
