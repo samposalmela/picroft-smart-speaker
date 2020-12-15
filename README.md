@@ -1,6 +1,8 @@
-# Picroft älykaiutin
+# Picroft älykaiutin projektin yleiskuvaus
 
 Projekti on tehty Haaga-Helian monialaprojekti kurssia varten. Tavoitteena on nopeuttaa tiedon hankkimista ja tehdä siitä vaivattomampaa. Projektin tuloksena syntyy toimiva älykaiutin hyödyntäen Raspberry Pi 4:sta ja Mycroft ääniavustajaa.
+
+# Picroft älykaiutin projektin tekninen kuvaus
 
 ## 1. Picroftin lataaminen ja asentaminen muistikortille
 
@@ -169,18 +171,32 @@ Jokaisen päivityksen jälkeen raspberry piti rebootata.
 
 `sudo reboot`
 
-
-
-
-Välillä tuli Erroreitakin.
+Välillä tuli myös Error-koodia.
 Error johtui kun kokeilimme tehdä taitoon jatko kysymyksiä. Esim. Kun kysytään seuraavaa bussia ja kysyisi heti perään seuraavaa.
 
 <img src="images/Error1.PNG">
 
-
-Seuraava errori johtui kun kokeilimme hieman siivota koodipätkää.
+Seuraava error-koodi johtui kun kokeilimme hieman siivota koodipätkää.
 
 <img src="images/Error1_Eipaivityaika.PNG">
 
 
+# Projektin lopputulos
 
+Projektin lopputuloksena meillä on toimiva Picroft älykaiutin, jolta pystyy kysymään seuraavien bussien saapumisajankohdat. Projekti oli onnistunut siinä mielessä, että saimme projektin minimitavoitteen täytettyä aikataulun sisällä.
+
+### Projektin lopputilanteen puutteet
+
+Picroft laitteistosta oli tarkoitus luoda myös ulkonäköisesti mielyttävä, mutta laitoimme laitteen toimivuuden ulkonäön edelle.
+
+### Projektin jatkokehitystarpeet
+
+Halusimme saada taidon ja mycroftin toimimaan suomen kielellä, mikä oli mahdollista, mutta halusimme käyttää resurssit laitteen toimivuuteen.
+
+Halusimme myös mahdollisuuden kysyä jatkokysymyksen luomaltamme taidolta, mutta se seurasi ainoastaan virhekoodeihin lukuisten yrityksien jälkeen, joten jouduimme unohtamaan kyseisen toiminnon. Myös muun tiedon hakeminen Digitransit API:sta, kuten esim. voiko bussiin päästä pyörätyolilla, oli myös tarkoitus sisällyttää jatkokysymyksiin. 
+
+### Lähteet
+
+https://mycroft-ai.gitbook.io/docs/
+https://digitransit.fi/en/developers/apis/1-routing-api/stops/
+https://graphql.org/code/#python
